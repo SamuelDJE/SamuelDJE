@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"><!--link para os icones-->
+    <link rel="stylesheet" href="/CSS/LoginGitHub.css"><!--link para o css-->
+    <title>Login</title>
+</head>
+
+<body>
+    <main class="container"><!--container principal-->
+        <form id="meuFormulario">
+            <div class="container-h1">
+                <h1>Login</h1>
+            </div>
+            <!-- Caixa de usuário -->
+            <div class="input-box">
+                <input type="text" id="usuario" placeholder="Usuário" maxlength="30">
+                <!-- Coloca um incone de usuario -->
+                <i class="bx bxs-user"></i>
+            </div>
+            <!-- Caixa de senha -->
+            <div class="input-box">
+                <input type="password" id="senha" placeholder="Senha" maxlength="8">
+                <!-- Coloca um incone de cadeiado -->
+                <i class="bx bxs-lock-alt"></i>
+            </div>
+
+
+
+            <!-- Botão de login -->
+            <button type="submit" onclick="verificarAcesso(usuarioInput, senhaInput)">Acessar</button>
+
+        </form>
+        <p id="mensagem"></p>
+        <script src="/JS/LoginGitHub.js"></script>
+    </main>
+    <!--Opção para tentar um acesso extra-->
+    <!-- <script src="Acesso.js"></script> -->
+    <footer>
+        <p>© Copyright 2026 - Samuel</p><br>
+        <p>
+            <!-- Atualizar a verificação do w3c Validador -->
+            <!-- <img src="img/site-responsivo.png" alt="site-responsivo" title="site-responsivo">
+            <img src="img/w3c-validation-html.png" alt="validation-html" title="validation-html">
+
+            <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
+                    alt="CSS válido!" title="CSS válido!" >
+            </a>
+             -->
+        </p>
+    </footer>
+    <!--Fim do rodape-->
+</body>
+
+</html>
